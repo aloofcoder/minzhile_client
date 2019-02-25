@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d0213"],{6751:function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},r=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",{staticClass:"layout-page"},[t("h1",[e._v("角色管理员")])])}],u={name:"RoleCenter",data:function(){return{}}},c=u,l=t("2877"),s=Object(l["a"])(c,a,r,!1,null,null,null);n["default"]=s.exports}}]);
+//# sourceMappingURL=chunk-2d0d0213.de0677e1.js.map

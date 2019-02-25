@@ -1,0 +1,227 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.layout-page {
+  width: 100%;
+  height: 100%;
+}
+
+.layout-sider {
+  /*position: absolute;*/
+  /*width: 170px;*/
+  /*height: 100%;*/
+  /*z-index: 200;*/
+  flex: 1;
+  background-color: #1C2B36;
+  color: white;
+}
+
+.layout-main {
+  flex: 7;
+  background-color: #f2f2f2;
+}
+
+.layout-header {
+  display: flex;
+  box-sizing: border-box;
+  line-height: 50px;
+  /*border-bottom: 1px solid #f6f6f6;*/
+  padding: 0 10px;
+  font-size: 16px;
+  background-color: white;
+}
+
+
+.layout-content {
+  height: calc(100% - 90px);
+  box-sizing: border-box;
+  display: block;
+  padding: 20px 0 0 20px;
+}
+
+.layout-sub-page {
+  padding: 15px 0 15px 15px;
+}
+
+.layout-logo {
+  box-sizing: border-box;
+  line-height: 50px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
+}
+.layout-logo a {
+  display: block;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+.layout-menu {
+  min-width: 52px;
+  max-width: 170px;
+  height: calc(100% - 50px);
+  overflow: scroll;
+}
+
+.layout-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.layout-admin {
+  flex: 1;
+  text-align: right;
+  min-width: 100px;
+}
+.layout-admin-info {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+}
+
+.layout-admin-info a {
+  color: #515a6e;
+}
+.layout-admin-detail {
+  display: none;
+  width: 150px;
+  position: absolute;
+  right: 5px;
+  text-align: left;
+  top: 50px;
+  background-color: white;
+  z-index: 10;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.layout-admin-detail a {
+  color: #515a6e;
+  display: block;
+  line-height: 35px;
+  padding-left: 15px;
+}
+
+.layout-admin-detail a:hover {
+  background-color: #F2F2F2;
+}
+
+.layout-admin-info:hover .layout-admin-detail {
+  display: block;
+}
+
+.layout-header-menu {
+  flex: 3;
+  text-align: left;
+}
+
+.layout-menu-check {
+  font-size: 18px !important;
+  color: #515a6e;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow-y: scroll;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.text-center {
+  text-align: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column
+}
+
+.login-header {
+  flex: 1;
+  min-height: 50px;
+}
+.login-logo {
+  line-height: 50px;
+  padding-left: 45px;
+}
+.login-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 8;
+  background: url("../../public/bg.jpg");
+}
+.login-footer {
+  flex: 1;
+}
+
+.login-form {
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 6px;
+  display: inline-block;
+  padding:35px 45px;
+  z-index: 1;
+  color: white;
+  min-width: 262px;
+}
+.login-operate {
+  display: flex;
+  justify-content: space-between;
+}
+.login-operate > a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+.login-msg {
+  color: red;
+}
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.menu-fade-enter-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.menu-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.menu-fade-enter, .menu-fade-leave-to
+  /* .slide-fade-leave-active for below version 2.1.8 */ {
+  transform: translateX(-170px);
+  opacity: 0;
+}

@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d225fe5"],{e785:function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},u=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",{staticClass:"layout-page"},[t("h1",[e._v("菜单中心")])])}],r={name:"MenuCenter",data:function(){return{}}},c=r,l=t("2877"),s=Object(l["a"])(c,a,u,!1,null,null,null);n["default"]=s.exports}}]);
+//# sourceMappingURL=chunk-2d225fe5.a5e71c02.js.map
