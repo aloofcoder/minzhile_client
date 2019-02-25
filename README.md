@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # minzhile-cli
 
 ## Project setup
@@ -27,3 +28,6 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# minzhile_client
+>>>>>>> f91c9bd354000641793d7b165004650be0f1b24e
