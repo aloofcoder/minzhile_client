@@ -12,9 +12,9 @@
             </Col>
         </Row>
         <Row class="mt-10">
-            <Button type="success" icon="ios-trash-outline" @click="handleBatchDel()">批量删除</Button>&nbsp;
+            <Button type="warning" icon="ios-trash-outline" @click="handleBatchDel()">批量删除</Button>&nbsp;
             <Button type="success" icon="ios-search" @click="handleSearch()">查询</Button>&nbsp;
-            <Button type="success" icon="md-add" @click="handleAddManager()">添加</Button>&nbsp;
+            <Button type="primary" icon="md-add" @click="handleAddManager()">添加</Button>&nbsp;
         </Row>
         <Row class="mt-10">
             <Table :loading="loading" :columns="columns" :data="userData" style="width: 100%;" @on-selection-change="handleSelectAll"></Table>
@@ -92,7 +92,8 @@
                                 h('Button', {
                                     props: {
                                         type: 'success',
-                                        size: 'small'
+                                        size: 'small',
+                                        ghost: 'ghost'
                                     },
                                     on: {
                                         click: () => {
@@ -103,7 +104,8 @@
                                 h('Button', {
                                     props: {
                                         type: 'error',
-                                        size: 'small'
+                                        size: 'small',
+                                        ghost: 'ghost'
                                     },
                                     on: {
                                         click: () => {

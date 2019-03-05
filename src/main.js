@@ -16,7 +16,12 @@ Vue.component('common-table', (resolve) => { require(['./components/CommonTable'
 Vue.component('user-list', (resolve) => { require(['./views/users/UserList'], resolve)})
 // 添加管理员信息
 Vue.component('add-user', (resolve) => { require(['./views/users/AddUser'], resolve)})
-
+// 角色信息列表
+Vue.component('role-list', (resolve) => { require(['./views/roles/RoleList'], resolve)})
+// 添加角色信息
+Vue.component('add-role', (resolve) => { require(['./views/roles/AddRole'], resolve)})
+// 菜单信息列表
+Vue.component('menu-list', (resolve) => { require(['./views/menus/MenuList'], resolve)})
 new Vue({
     router,
     render: h => h(App),

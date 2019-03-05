@@ -45,24 +45,30 @@
                         icon: 'ios-contact',
                         children: []
                     },
-                    // {
-                    //     name: '资讯管理',
-                    //     link: 'information',
-                    //     icon: 'ios-images',
-                    //     children: []
-                    // },
-                    // {
-                    //     name: '菜单管理',
-                    //     link: '/menucenter',
-                    //     icon: 'md-menu',
-                    //     children: []
-                    // },
-                    // {
-                    //     name: '角色管理',
-                    //     link: '/rolecenter',
-                    //     icon: 'ios-people-outline',
-                    //     children: []
-                    // }
+                    {
+                        name: '资讯管理',
+                        link: 'information',
+                        icon: 'ios-images',
+                        children: []
+                    },
+                    {
+                        name: '菜单管理',
+                        link: '/menucenter',
+                        icon: 'md-menu',
+                        children: []
+                    },
+                    {
+                        name: '角色管理',
+                        link: '/rolecenter',
+                        icon: 'ios-people-outline',
+                        children: []
+                    },
+                    {
+                        name: '测试管理',
+                        link: '/treetable',
+                        icon: 'ios-people-outline',
+                        children: []
+                    }
                 ],
                 tabs: [],
                 managerInfo: {}

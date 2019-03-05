@@ -1,19 +1,16 @@
 <template>
-    <div class="layout-app">
-        <div class="layout-page">
-            <LMenu :menus="menus" @patch-tree="patchTree"></LMenu>
-        </div>
-        <div class="layout-page">
-            {{itemName}}
-        </div>
+    <div class="layout-page">
+        <TreeTable :menu-data="menuData"></TreeTable>
     </div>
 </template>
 <script>
     import LMenu from '../components/Tree'
+    import TreeTable from '../components/TreeTable'
     export default {
         name: 'Information',
         components: {
-            LMenu
+            LMenu,
+            TreeTable
         },
         data () {
             return {
@@ -56,10 +53,25 @@
                         children: []
                     }
                 ],
-                itemName: ''
+                itemName: '',
+                menuData: []
             }
         },
+        created () {
+          this.handleSearch()
+        },
         methods: {
+            handleSearch(page = 1) {
+                this.$http.get('menus', {currentPage: page}).then((res) => {
+                    if (res.state === 0) {
+                        this.menuData = [...res.data]
+                    } else {
+                        this.$Message.warning(res.message)
+                    }
+                }).catch((err) => {
+                    this.$Message.error(err.message)
+                })
+            },
             patchTree (item) {
                 this.itemName = item.name
             }
